@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MovieBlog.Models.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<section class="header-posts">
+    <div class="container ">
+        <p>
+            <a asp-controller="Posts" asp-action="Create">Create New</a>
+        </p>
+        <div class="row">
+            <div class="col-8">
+                @foreach (var item in Model)
+                {
+                    <div class="card mb-3 shadow rounded-0 zoom">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="~/Posts/@item.Id/PostImage.jpg" asp-append-version="true" class="img-fluid" alt="Slika članka">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a asp-controller="Posts" asp-action="Index" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Title)</a></h5>
+                                    <p class="card-text">@Html.DisplayFor(modelItem => item.Body)</p>
+                                    <p class="card-text"><small class="text-muted">@Html.DisplayFor(modelItem => item.PubDate)</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,49 @@
+﻿@model MovieBlog.Models.Post
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="container">
+    <h1 class="ms-5">Uredi</h1>
+
+    <h4 class="ms-5">Post</h4>
+    <hr />
+    <div class="row m-5">
+        <div class="col-md-6">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="PostImgFile" class="control-label"></label>
+                    <input asp-for="PostImgFile" class="form-control" accept="image/*" />
+                    <span asp-validation-for="PostImgFile" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Body" class="control-label"></label>
+                    <textarea asp-for="Body" class="form-control textarea" rows="8"></textarea>
+                    <span asp-validation-for="Body" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+            <div class="my-4">
+                <a asp-action="Index">Natrag na početnu</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

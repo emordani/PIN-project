@@ -1,0 +1,39 @@
+﻿@model MovieBlog.Models.Post
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+
+<h3 class="ms-4 text-center">Jeste li sigurni da želite izbrisati ovaj post?</h3>
+<div>
+    <hr />
+    <section class="blog-posts py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-9 color">
+                    <div class="post-image">
+                        <img src="~/Posts/@Model.Id/PostImage.jpg" asp-append-version="true" class="img-fluid" alt="Slika članka">
+                    </div>
+                    <div class="post-title">
+                        <h2 class="font-weight-bold"> @Html.DisplayFor(model => model.Title)</h2>
+                    </div>
+                    <div class="post-content">
+                        <h5 class="card-title"> @Html.DisplayFor(model => model.Body)</h5>
+                    </div>
+                </div>
+                <div class="col-3 color">
+                    <form asp-action="Delete" class="color">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="submit" value="Delete" class="btn btn-danger" /> |
+                        <a asp-action="Index" asp-controller="Home">Natrag na početnu</a>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        
+
+    </section>
+    
+</div>

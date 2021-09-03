@@ -1,0 +1,93 @@
+.navbar {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(38, 152, 187) !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}
+.header-posts {
+    background-color: #12121f;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+.blog-posts {
+    background-color: #12121f;
+    margin-bottom: 50px;
+}
+.footer{
+    background-color: #000000;
+    color:rgb(38, 152, 187) !important;
+}
+a{
+    text-decoration: none;
+    color:rgb(38, 152, 187) !important;
+}
+.card{
+    background-color: rgb(0, 0, 0);
+    color:rgb(38, 152, 187) !important;
+}
+.card h5{
+    background-color: rgba(0, 0, 0, 0.514);
+}
+.side-postsp {
+    padding: 1px 5px 5px 5px;
+  }
+  .color{
+    background-color: rgb(59, 59, 59);
+  }
+  .comments{
+      border:1px solid rgb(38, 152, 187);
+  }
+  .color{
+    background-color: #010014;
+  }
+  .post-content p{      
+      color: #b6b6e3 !important;
+  }
+  hr{
+    border:1px solid rgb(38, 152, 187);
+  }
+  .zoom {  
+    transition: transform .4s; /* Animation */
+    z-index: 900;
+    cursor: pointer; 
+    }
+  .zoom:hover {
+    transform: scale(1.1);
+    z-index: 900;  
+  }
+  .side-posts{
+    border:1px solid rgb(38, 152, 187);
+  }
+body {
+    font-family: 'XB Sols', sans-serif;
+    background-color: #12121f !important;
+}
+  .slick-slide {
+    margin: 0px 10px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+main {
+    background-color: #12121f !important;
+    color: rgb(38, 152, 187) !important;
+}
+.main  {
+    background-color: #12121f !important;
+    color: rgb(38, 152, 187) !important;
+}
+.form-control {
+    background-color: #12121f !important;
+    color: rgb(38, 152, 187) !important;
+}
+body h1, h2, h3, h4, h5, h6, label, p, small {
+    color: rgb(38, 152, 187) !important;
+}
+.footer {
+    bottom: 0;
+}
+colorSlova {
+    color: rgb(38, 152, 187) !important;
+}
