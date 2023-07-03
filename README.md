@@ -1,2 +1,2 @@
 # PIN-project
-Jednostavan blog u kojem je moguće pregledavati postove, ali ukoliko ih se želi kreirati, mjenjati ili brisati potrebna je prijava.
+A simple blog using .NET core for displaying knowledge of the MVC pattern is part of a college project for the Programming on the Internet course.
